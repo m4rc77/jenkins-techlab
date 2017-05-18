@@ -7,7 +7,7 @@ properties([
     parameters([
         string(defaultValue: 'Jenkins Techlab', description: 'Who to greet?', name: 'Greetings_to'),
         choice(choices: ['a', 'b', 'c', 'd'], description: 'Do the choice', name: 'auswahl')
-    )
+    ])
 ])
 
 timestamps() {
