@@ -4,9 +4,9 @@ properties([
         pollSCM('H/5 * * * *'),
         cron('@midnight')
     ]),
-    parameters(
-        [string(defaultValue: 'Jenkins Techlab', description: 'Who to greet?', name: 'Greetings_to')],
-        [choice(choices: ['a', 'b', 'c', 'd'], description: 'Do the choice', name: 'auswahl')
+    parameters([
+        string(defaultValue: 'Jenkins Techlab', description: 'Who to greet?', name: 'Greetings_to'),
+        choice(choices: ['a', 'b', 'c', 'd'], description: 'Do the choice', name: 'auswahl')
     )
 ])
 
