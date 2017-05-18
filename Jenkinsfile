@@ -15,7 +15,7 @@ pipeline {
     stages {
         stage('Greeting') {
             steps {
-                echo "Hello, ${env.GREETINGS_TO} !"
+                echo "Hello, ${env.GREETINGS_TO} ${env.BUILD_ID}!"
             }
         }
     }
